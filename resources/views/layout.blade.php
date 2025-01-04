@@ -95,7 +95,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="EmergencyHotline.php" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="EmergencyHotline" class="sidebar-link" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-phone"></i>
                                 </span>

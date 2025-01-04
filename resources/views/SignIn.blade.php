@@ -34,7 +34,7 @@
                                     </div>
                                     <a class="text-primary fw-bold" href="">Forgot Password ?</a>
                                 </div>
-                                <a href="/ddashboard" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</a>
+                                <a href="/dashboard" class="btn btn-primary w-100 py-8 fs-4 mb-4 rounded-2">Sign In</a>
                                 <div class="d-flex align-items-center justify-content-center">
                                     <p class="fs-4 mb-0 fw-bold">New to ProtectPlus?</p>
                                     <a class="text-primary fw-bold ms-2" href="/SignUp">Create an account</a>
