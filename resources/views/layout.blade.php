@@ -45,7 +45,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/EvacuationAreas" class="sidebar-link {{ request()->routeIs('EvacuationAreas') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="/EvacuationAreas"
+                                class="sidebar-link {{ request()->routeIs('EvacuationAreas') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-home"></i>
                                 </span>
@@ -53,7 +55,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/ApproveLectures" class="sidebar-link {{ request()->routeIs('ApproveLectures') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="/ApproveLectures"
+                                class="sidebar-link {{ request()->routeIs('ApproveLectures') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-check"></i>
                                 </span>
@@ -61,7 +65,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Feedbacks" class="sidebar-link {{ request()->routeIs('Feedbacks') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="Feedbacks"
+                                class="sidebar-link {{ request()->routeIs('Feedbacks') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-message-circle"></i>
                                 </span>
@@ -69,7 +75,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="GenerateCertificates" class="sidebar-link {{ request()->routeIs('GenerateCertificates') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="GenerateCertificates"
+                                class="sidebar-link {{ request()->routeIs('GenerateCertificates') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-certificate"></i>
                                 </span>
@@ -77,8 +85,8 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Lectures" class="sidebar-link {{ request()->routeIs('Lectures') ? 'active' : '' }}" href=""
-                                aria-expanded="false">
+                            <a href="Lectures" class="sidebar-link {{ request()->routeIs('Lectures') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-book"></i>
                                 </span>
@@ -86,7 +94,8 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Employee" class="sidebar-link {{ request()->routeIs('Employee') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="Employee" class="sidebar-link {{ request()->routeIs('Employee') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-user"></i>
                                 </span>
@@ -94,7 +103,9 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="EmergencyHotline" class="sidebar-link {{ request()->routeIs('EmergencyHotline') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="EmergencyHotline"
+                                class="sidebar-link {{ request()->routeIs('EmergencyHotline') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-phone"></i>
                                 </span>
@@ -103,7 +114,9 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a href="HazardAreas" class="sidebar-link {{ request()->routeIs('HazardAreas') ? 'active' : '' }}" href="" aria-expanded="false">
+                            <a href="HazardAreas"
+                                class="sidebar-link {{ request()->routeIs('HazardAreas') ? 'active' : '' }}"
+                                href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-alert-triangle"></i>
                                 </span>
@@ -157,11 +170,12 @@
                                     aria-labelledby="drop2">
                                     <div class="message-body">
                                         <a href="javascript:void(0)"
-                                            class="d-flex align-items-center gap-2 dropdown-item">
+                                            class="d-flex align-items-center gap-2 dropdown-item"
+                                            data-bs-toggle="modal" data-bs-target="#manage-profile-modal">
                                             <i class="ti ti-user fs-6"></i>
                                             <p class="mb-0 fs-3">My Profile</p>
                                         </a>
-                                        <a href="/SignIn.php"
+                                        <a href="/"
                                             class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                                     </div>
                                 </div>
@@ -174,6 +188,102 @@
                 @yield('content')
             </div>
 
+        </div>
+    </div>
+
+    <div class="modal fade" id="manage-profile-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row w-100">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter first name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Middle Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter middle name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Enter Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" placeholder="09956225434">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="abc@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Birthdate</label>
+                                        <input type="date" class="form-control" value="2018-05-13">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Address</label>
+                                        <input type="text" class="form-control" placeholder="Enter Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label"> Image</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Username</label>
+                                        <input type="text" class="form-control" placeholder="Enter Username">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control" placeholder="Enter Password">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control"
+                                            placeholder="Comnfirm your Password">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary btn-save add-user">Save</button>
+                </div>
+            </div>
         </div>
     </div>
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
