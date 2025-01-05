@@ -78,12 +78,12 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="MonitorHazard" class="sidebar-link" href=""
+                            <a href="Lectures" class="sidebar-link" href=""
                                 aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-map"></i>
+                                    <i class="ti ti-book"></i>
                                 </span>
-                                <span class="hide-menu">Monitor Hazard Areas</span>
+                                <span class="hide-menu">Lectures</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -189,7 +189,7 @@
     <script src="assets/js/sidebarmenu.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.js"></script> 
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>

@@ -42,5 +42,11 @@ Route::get('/EmergencyHotline', function () {
 Route::get('/HazardAreas', function () {
     return view('HazardAreas');
 })->name('HazardAreas');
+Route::get('/Lectures', function () {
+    return view('Lectures');
+})->name('Lectures');
+Route::get('/LectureQuiz', function () {
+    return view('LectureQuiz');
+})->name('LectureQuiz');
 
 

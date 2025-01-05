@@ -70,34 +70,6 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-12 d-flex align-items-stretch">
-            <div class="card w-100">
-                <div class="card-body p-4">
-                    <h5 class="card-title fw-semibold mb-4">Hazard Map</h5>
-                    <div class="col-12 mb-3">
-                        <div class="d-flex align-items-center">
-                            <div class="me-4">
-                                <span class="round-15 rounded-circle me-2 d-inline-block" id="very-high-marker"></span>
-                                <span class="fs-2">Very High</span>
-                            </div>
-                            <div class="me-4">
-                                <span class="round-15 rounded-circle me-2 d-inline-block" id="high-marker"></span>
-                                <span class="fs-2">High</span>
-                            </div>
-                            <div class="me-4">
-                                <span class="round-15 rounded-circle me-2 d-inline-block" id="moderate-marker"></span>
-                                <span class="fs-2">Moderate</span>
-                            </div>
-                            <div class="me-4">
-                                <span class="round-15 rounded-circle me-2 d-inline-block" id="low-marker"></span>
-                                <span class="fs-2">Low</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="map" style="height: 700px; width: 100%;"></div>
-                </div>
-            </div>
-        </div>
 
         <div class="col-lg-12 d-flex align-items-stretch">
             <div class="card w-100">
@@ -466,109 +438,7 @@
         });
 
 
-        //Map Initializations
-
-        var map;
-
-        let hazardLocation = {
-            hazardType: "",
-            riskLevel: "",
-            coordinates: {
-                lat: 0,
-                lng: 0
-            }
-        };
-
-        let main_marker = null;
-
-        const hazardLocations = [{
-                lat: 6.112,
-                lng: 125.171,
-                hazardType: "Flood",
-                riskLevel: "High"
-            },
-            {
-                lat: 7.190,
-                lng: 125.455,
-                hazardType: "Landslide",
-                riskLevel: "Moderate"
-            },
-            {
-                lat: 6.953,
-                lng: 124.894,
-                hazardType: "Earthquake",
-                riskLevel: "Severe"
-            },
-            {
-                lat: 8.501,
-                lng: 124.640,
-                hazardType: "Typhoon",
-                riskLevel: "High"
-            },
-            {
-                lat: 7.073,
-                lng: 124.276,
-                hazardType: "Flood",
-                riskLevel: "Moderate"
-            }
-        ];
-
-        initializeMap();
-
-        async function initializeMap() {
-            map = L.map('map').setView([6.497396, 124.847160], 8);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '© OpenStreetMap contributors'
-            }).addTo(map);
-
-            // Add geocoder control
-            L.Control.geocoder({
-                defaultMarkGeocode: false
-            }).on('markgeocode', function(e) {
-                var latlng = e.geocode.center;
-                map.setView(latlng, 11);
-            }).addTo(map);
-
-            // Add random hazard locations to the map with color-coded circle markers
-            hazardLocations.forEach(location => {
-                const circleColor = getMarkerColor(location.riskLevel);
-
-                const circleMarker = L.circleMarker([location.lat, location.lng], {
-                    color: circleColor,
-                    radius: 10,
-                    fillOpacity: 0.7
-                }).addTo(map);
-
-                circleMarker.bindPopup(`
-            <div>
-                <strong>Hazard Type:</strong> ${location.hazardType}<br>
-                <strong>Risk Level:</strong> ${location.riskLevel}<br>
-                <strong>Coordinates:</strong> ${location.lat}, ${location.lng}
-            </div>
-            `);
-            });
-        }
-
-        function getMarkerColor(riskLevel) {
-            switch (riskLevel) {
-                case "High":
-                    return "red"; // Red
-                case "Moderate":
-                    return "orange"; // Orange
-                case "Severe":
-                    return "darkred"; // Dark Red
-                default:
-                    return "green"; // Green
-            }
-        }
-
-        function updateMarkerPopup(marker) {
-            marker.setPopupContent(`
-                <div>
-                    <div>Coordinates: ${hazardLocation.coordinates.lat}, ${hazardLocation.coordinates.lng}</div>
-                </div>
-            `).openPopup();
-        }
+       
 
         $("#very-high-marker").css("background-color", getMarkerColor("Severe"));
         $("#high-marker").css("background-color", getMarkerColor("High"));
