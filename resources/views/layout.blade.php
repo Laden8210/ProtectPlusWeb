@@ -8,7 +8,6 @@
     <link rel="shortcut icon" type="image/png" href="" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
@@ -189,12 +188,7 @@
     <script src="assets/js/sidebarmenu.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-    <script src="assets/libs/simplebar/dist/simplebar.js"></script> 
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
     @stack('scripts')
     <script>
         $(document).ready(function() {
