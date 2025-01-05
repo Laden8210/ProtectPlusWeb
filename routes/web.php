@@ -11,7 +11,7 @@ Route::get('/SignUp', function () {
 })->name('SignUp');
 
 Route::get('/dashboard', function () {
-    return view('Dashboard');
+    return view('dashboard');
 })->name('dashboard');
 
 Route::get('/EvacuationAreas', function () {
