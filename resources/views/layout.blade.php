@@ -46,7 +46,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/EvacuationAreas" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="/EvacuationAreas" class="sidebar-link {{ request()->routeIs('EvacuationAreas') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-home"></i>
                                 </span>
@@ -54,7 +54,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/ApproveLectures" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="/ApproveLectures" class="sidebar-link {{ request()->routeIs('ApproveLectures') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-check"></i>
                                 </span>
@@ -62,7 +62,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Feedbacks" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="Feedbacks" class="sidebar-link {{ request()->routeIs('Feedbacks') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-message-circle"></i>
                                 </span>
@@ -70,7 +70,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="GenerateCertificates" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="GenerateCertificates" class="sidebar-link {{ request()->routeIs('GenerateCertificates') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-certificate"></i>
                                 </span>
@@ -78,7 +78,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Lectures" class="sidebar-link" href=""
+                            <a href="Lectures" class="sidebar-link {{ request()->routeIs('Lectures') ? 'active' : '' }}" href=""
                                 aria-expanded="false">
                                 <span>
                                     <i class="ti ti-book"></i>
@@ -87,7 +87,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="Employee" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="Employee" class="sidebar-link {{ request()->routeIs('Employee') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-user"></i>
                                 </span>
@@ -95,7 +95,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="EmergencyHotline" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="EmergencyHotline" class="sidebar-link {{ request()->routeIs('EmergencyHotline') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-phone"></i>
                                 </span>
@@ -104,7 +104,7 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a href="HazardAreas" class="sidebar-link" href="" aria-expanded="false">
+                            <a href="HazardAreas" class="sidebar-link {{ request()->routeIs('HazardAreas') ? 'active' : '' }}" href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-alert-triangle"></i>
                                 </span>

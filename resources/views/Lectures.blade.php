@@ -56,7 +56,7 @@
                                     <button class="btn btn-sm btn-primary me-1" onclick="showModal()">
                                         <i class="ti ti-pencil"></i> Edit
                                     </button>
-                                    <button class="btn btn-sm btn-danger" onclick="deleteRow(this)">
+                                    <button class="btn btn-sm btn-danger me-1" onclick="deleteRow(this)">
                                         <i class="ti ti-trash"></i> Delete
                                     </button>
                                     <button class="btn btn-sm btn-success" onclick="showQuizModal()">
