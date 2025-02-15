@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 </head>
@@ -48,7 +54,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="/EvacuationAreas"
+                            <a href="/evacuation-areas"
                                 class="sidebar-link {{ request()->routeIs('EvacuationAreas') ? 'active' : '' }}"
                                 href="" aria-expanded="false">
                                 <span>
@@ -178,8 +184,7 @@
                                             <i class="ti ti-user fs-6"></i>
                                             <p class="mb-0 fs-3">My Profile</p>
                                         </a>
-                                        <a href="/"
-                                            class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                        <a href="/" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                                     </div>
                                 </div>
                             </li>

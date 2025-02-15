@@ -18,5 +18,7 @@ class EvacuationArea extends Model
         'type_facility',
         'status',
         'image',
+        'latitude',
+        'longitude',
     ];
 }

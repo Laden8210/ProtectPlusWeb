@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('type_facility');
             $table->string('status');
             $table->string('image');
+            $table->string('latitude');
+            $table->string('longitude');
             $table->timestamps();
         });
 
