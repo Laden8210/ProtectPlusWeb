@@ -1,52 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('SignIn');
-})->name('SignIn');
-
-Route::get('/SignUp', function () {
-    return view('SignUp');
-})->name('SignUp');
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
-Route::get('/EvacuationAreas', function () {
-    return view('EvacuationAreas');
-})->name('EvacuationAreas');
-
-Route::get('/ApproveLectures', function () {
-    return view('ApproveLectures');
-})->name('ApproveLectures');
-
-Route::get('/Feedbacks', function () {
-    return view('Feedbacks');
-})->name('Feedbacks');
-Route::get('/GenerateCertificates', function () {
-    return view('GenerateCertificates');
-})->name('GenerateCertificates');
-
-Route::get('/MonitorHazard', function () {
-    return view('MonitorHazard');
-})->name('MonitorHazard');
-
-Route::get('/Employee', function () {
-    return view('Employees');
-})->name('Employee');
-Route::get('/EmergencyHotline', function () {
-    return view('EmergencyHotlines');
-})->name('EmergencyHotline');
-Route::get('/HazardAreas', function () {
-    return view('HazardAreas');
-})->name('HazardAreas');
-Route::get('/Lectures', function () {
-    return view('Lectures');
-})->name('Lectures');
-Route::get('/LectureQuiz', function () {
-    return view('LectureQuiz');
-})->name('LectureQuiz');
-
-
+Route::get('/', [PageController::class, 'signIn'])->name('SignIn');
+Route::get('/SignUp', [PageController::class, 'signUp'])->name('SignUp');
+Route::get('/dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+Route::get('/EvacuationAreas', [PageController::class, 'evacuationAreas'])->name('EvacuationAreas');
+Route::get('/ApproveLectures', [PageController::class, 'approveLectures'])->name('ApproveLectures');
+Route::get('/Feedbacks', [PageController::class, 'feedbacks'])->name('Feedbacks');
+Route::get('/GenerateCertificates', [PageController::class, 'generateCertificates'])->name('GenerateCertificates');
+Route::get('/MonitorHazard', [PageController::class, 'monitorHazard'])->name('MonitorHazard');
+Route::get('/Employee', [PageController::class, 'employees'])->name('Employee');
+Route::get('/EmergencyHotline', [PageController::class, 'emergencyHotline'])->name('EmergencyHotline');
+Route::get('/HazardAreas', [PageController::class, 'hazardAreas'])->name('HazardAreas');
+Route::get('/Lectures', [PageController::class, 'lectures'])->name('Lectures');
+Route::get('/LectureQuiz', [PageController::class, 'lectureQuiz'])->name('LectureQuiz');
