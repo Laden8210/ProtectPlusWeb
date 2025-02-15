@@ -26,7 +26,7 @@ return new class extends Migration
             $table->id();
             $table->string('location_name');
             $table->string('location');
-            $table->string('harzard_type');
+            $table->string('hazard_type');
             $table->string('risk_level');
             $table->string('status');
             $table->string('image');

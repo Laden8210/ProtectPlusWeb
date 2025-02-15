@@ -13,7 +13,6 @@ class EmergencyHotline extends Model
 
     protected $fillable = [
         'name',
-        'emergency_hotline_type',
         'contact_number',
         'telephone_number',
         'address',

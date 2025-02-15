@@ -14,7 +14,7 @@ class HazardProneArea extends Model
     protected $fillable = [
         'location_name',
         'location',
-        'harzard_type',
+        'hazard_type',
         'risk_level',
         'status',
         'image',

@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
 </head>
 
 <body>
@@ -103,8 +106,8 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="EmergencyHotline"
-                                class="sidebar-link {{ request()->routeIs('EmergencyHotline') ? 'active' : '' }}"
+                            <a href="emergency-hotlines"
+                                class="sidebar-link {{ request()->routeIs('emergency-hotlines') ? 'active' : '' }}"
                                 href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-phone"></i>
@@ -114,8 +117,8 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a href="HazardAreas"
-                                class="sidebar-link {{ request()->routeIs('HazardAreas') ? 'active' : '' }}"
+                            <a href="hazards"
+                                class="sidebar-link {{ request()->routeIs('hazards') ? 'active' : '' }}"
                                 href="" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-alert-triangle"></i>
