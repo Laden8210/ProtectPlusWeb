@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.layout')
 
 @section('title', 'Evacuation Areas')
 
@@ -156,14 +156,14 @@
 
         let main_marker = null;
 
-        
+
 
         $('.save-location').on('click', function() {
             $('#locationInput').val(selectedLocation.coordinates.lat + ", " + selectedLocation.coordinates.lng);
         });
 
         async function viewLocation() {
-            
+
             $('#show-location-modal').modal('show');
         }
 

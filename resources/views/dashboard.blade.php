@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.layout')
 
 @section('title', 'Dashboard')
 
@@ -179,7 +179,7 @@
                                         <p class="mb-0 fw-normal">1:30 PM</p>
                                     </td>
                                 </tr>
-                                
+
 
                             </tbody>
                         </table>
@@ -438,7 +438,7 @@
         });
 
 
-       
+
 
         $("#very-high-marker").css("background-color", getMarkerColor("Severe"));
         $("#high-marker").css("background-color", getMarkerColor("High"));

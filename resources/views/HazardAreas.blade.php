@@ -1,5 +1,4 @@
-@extends('layout')
-
+@extends('layout.layout')
 @section('title', 'Hazard Areas Management')
 
 @section('content')
@@ -157,6 +156,6 @@
         async function showModal() {
             $('#manage-employee-modal').modal('show');
         }
-      
+
     </script>
 @endpush
